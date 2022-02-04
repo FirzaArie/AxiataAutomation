@@ -11,11 +11,11 @@ import com.gistgithub.locator.driver.DriverSingleton;
 
 
 
-public class Dashboard {
+public class Logout {
 
 	private WebDriver driver;
 	
-	public Dashboard() {
+	public Logout() {
 		this.driver = DriverSingleton.getDriver();
 		PageFactory.initElements(driver, this);
 	}

@@ -21,6 +21,7 @@ public class Git {
 		PageFactory.initElements(driver, this);
 	}
 	
+	
 	@FindBy(id = "code-editor")
 	private WebElement boxCodeEditor;
 	
@@ -41,6 +42,7 @@ public class Git {
 	
 	public void Create() {
 		WebDriverWait wait = new WebDriverWait(driver, 15);
+		driver.get("https://gist.github.com/");
 		wait.until(ExpectedConditions.elementToBeClickable(createGist));
 		boxCodeEditor.sendKeys("Hello World");
 		createGist.click();

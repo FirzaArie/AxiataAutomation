@@ -3,7 +3,7 @@ package com.gistgithub.locator.main;
 import org.openqa.selenium.WebDriver;
 
 import com.gistgithub.locator.driver.DriverSingleton;
-import com.gistgithub.locator.pages.dashboard.Dashboard;
+import com.gistgithub.locator.pages.dashboard.Logout;
 import com.gistgithub.locator.pages.git.Git;
 import com.gistgithub.locator.pages.login.LoginPage;
 
@@ -21,7 +21,7 @@ public class MainApp {
 		 * Email : FirzaArie
 		 * Password : Arieperdana19
 		 */
-		login.login("FirzaArie", "Arieperdana19");
+//		login.login("FirzaArie", "Arieperdana19");
 		
 		driver.get("https://gist.github.com");
 		
@@ -31,7 +31,7 @@ public class MainApp {
 		git.Delete();
 		git.List();
 		
-		Dashboard dashboard = new Dashboard();
+		Logout dashboard = new Logout();
 		dashboard.logout();
 				
 		

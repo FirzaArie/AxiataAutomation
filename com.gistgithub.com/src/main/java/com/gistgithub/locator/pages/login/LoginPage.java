@@ -33,11 +33,11 @@ public class LoginPage {
 		goLoginButton.click();
 	}
 	
-	public void login(String email, String password) {
+	public void login() {
 		WebDriverWait wait = new WebDriverWait(driver, 60);
 		wait.until(ExpectedConditions.elementToBeClickable(btnLogin));
-		txtUsername.sendKeys(email);
-		txtPassword.sendKeys(password);
+		txtUsername.sendKeys("FirzaArie");
+		txtPassword.sendKeys("Arieperdana19");
 		btnLogin.click();
 		
 	}
